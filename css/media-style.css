@@ -1,0 +1,109 @@
+
+
+
+@media screen and (min-width: 1280px){
+
+ 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika&display=swap');
+
+/* balises generiques*/
+body,header
+{
+ margin:0;
+}
+
+h2
+{
+font-family: 'Signika', sans-serif;
+font-size: 30px;
+padding : 50px 0 ;
+}
+
+.marge_section
+{
+    padding: 0 200px;
+}
+
+
+p
+{
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;  
+}
+#boutique, #contact
+{
+background-color:#d0dbcf ; 
+padding-bottom: 50px; 
+
+}
+#matiere, #collection, footer
+{
+background-color: #a68f77 ;
+padding-bottom: 50px;    
+}
+/*navbar*/
+
+
+
+
+.navbar
+{
+background-color: #a68f77 ;
+color:black;
+display: flex;
+justify-content: flex-end;  
+
+width: 100%;
+}
+
+.nav_ul
+{
+background-color: #a68f77 ;
+ color:black;
+ display: flex;
+align-items: row;
+
+    
+display: flex;
+align-items: row;
+
+justify-content: flex-end;
+margin-right: 160px;
+padding: 20px 0;
+list-style: none;
+justify-content: space-between;
+}
+
+a
+{
+font-family:'Signika', sans-serif; 
+text-decoration: none;
+font-size: 16px;
+color: black;
+padding:35px 10px;
+}
+
+a:hover
+{
+font-family:'Signika', sans-serif; 
+text-decoration: none;
+font-size: 16px;
+background-color:rgba(102, 136, 96, 0.6);
+padding:35px 10px;
+}
+#burger
+{
+display: none;
+}
+.logo_blanc
+{
+background: url("../img/logoblanc.png") no-repeat;
+position: absolute;
+ top: -30px; 
+ left:0px;
+width: 200px;
+height: 100px;
+
+    
+}   
+    }

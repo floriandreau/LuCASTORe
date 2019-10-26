@@ -1,90 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>LuCASTORe</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-style.css" />
+  </head>
+  <body>
     <!-- Pour nom de classe mettre media pour le fichier media-style -->
 
     <header>
-        <nav>
-            <h1></h1>
-            <ul>
-                <li><a href="#boutique">Notre boutique vegan</a></li>
-                <li><a href="#Matière"></a>Nos matières premières</li>
-                <li><a href="#map"></a>Nos fournisseurs</li>
-                <li><a href="#collection"></a>Nos collections</li>
-                <li><a href="#contact"></a>Contact</li>
-            </ul>
-            <label for=""></label>
+            <h1 class="logo_blanc"></h1>
+        <nav class="navbar">
+          
+          <ul class="nav_ul">
+            <li class="media"><a href="#boutique">NOTRE BOUTIQUE VEGANE</a></li>
+            <li class="media"><a href="#matiere">NOS MATIÈRES PREMIÈRES</a></li>
+            <li class="media"><a href="#map">NOS FOURNISSEURS</a></li>
+            <li class="media"><a href="#collection">NOS COLLECTIONS</a></li>
+            <li class="media"><a href="#contact">CONTACTS</a></li>
+          </ul>
+          <!-- a mettre en display none -->
+          <input type="checkbox" id="burger" />
+          <label for="burger"></label>
         </nav>
-        <div></div>
+     
+      <div class="background_mag"></div>
     </header>
     <main>
-        <!-- section démarche -->
-        <section id="boutique">
-            <h2> <img src="" alt=""> Une démarche éthique</h2>
-            <p>“Nous avons pour priorité d’acheter des produits respectueux des animaux. 
-                Nos considérations sont aussi orientées vers la santé et de l’écologie. 
-                Notre choix de commercialiser des vêtements éthiques découle également de notre désir 
-                    de nous engager pour l’équité sociale et une exploitation raisonnée des ressources naturelles. 
-                    Ainsi nous refusons d’utiliser toute matière synthétique ou d’origine animale 
-                    en faveur de productions éco-responsables (commerce équitable, bio, local).”<span>Lucas VdB, Fondateur de LuCASTORe</span></p> 
-            <img src="" alt="">
-        </section>
+      <!-- section démarche -->
+      <section id="boutique" class="marge_section">
+        <h2><img src="" alt="" /> UNE DÉMARCHE ÉTHIQUE</h2>
+        <p>
+          “Nous avons pour priorité d’acheter des produits respectueux des
+          animaux. Nos considérations sont aussi orientées vers la santé et de
+          l’écologie. Notre choix de commercialiser des vêtements éthiques
+          découle également de notre désir de nous engager pour l’équité sociale
+          et une exploitation raisonnée des ressources naturelles. Ainsi nous
+          refusons d’utiliser toute matière synthétique ou d’origine animale en
+          faveur de productions éco-responsables (commerce équitable, bio,
+          local).”<span>Lucas VdB, Fondateur de LuCASTORe</span>
+        </p>
+        <img src="img/lucasvegan.jpg" alt="lucas" />
+      </section>
 
-        <!-- section matière (slide pour mobile ?)-->
-        <section id="Matière">
-            <h2>NOS MATIÈRES PREMIÈRES</h2>
-            <arcticle> 
-                <img src="" alt=""> 
-                <p></p> 
-            </arcticle>
-            <arcticle> 
-                <img src="" alt=""> 
-                <p></p> 
-            </arcticle>
-            <arcticle> 
-                <img src="" alt=""> 
-                <p></p> 
-            </arcticle>
-        </section>
+      <!-- section matière (slide pour mobile ?)-->
+      <section id="matiere" class="marge_section">
+        <h2>NOS MATIÈRES PREMIÈRES</h2>
+        <arcticle>
+          <img src="c" alt="coton" />
+          <p></p>
+        </arcticle>
+        <arcticle>
+          <img src="img/fibre_chanvre.jpg" alt="chanvre" />
+          <p></p>
+        </arcticle>
+        <arcticle>
+          <img src="img/lin_teille.jpg" alt="lin" />
+          <p></p>
+        </arcticle>
+      </section>
 
-        <!-- section map -->
-        <section id="map">
-            <h2>Nos Fournisseurs</h2>
-            <div></div>
-        </section>
+      <!-- section map -->
+      <section id="map" class="marge_section">
+        <h2>NOS FOURNISSEURS</h2>
+        <div class="background_map"></div>
+      </section>
 
-        <!-- section collections avec slide-->
-        <section id="collection">
-            <h2>Nos collections</h2>
-            <div>
-                <p>Découvrez les créations de nos stylistes . 
-                    L’ensemble de leur collection nous permet de vous proposer un éventail de 165 références.   </p>
-                <img src="" alt="">
-            </div>
-        </section>
+      <!-- section collections avec slide-->
+      <section id="collection" class="marge_section">
+        <h2>NOS COLLECTIONS</h2>
+        <div>
+          <p>
+            Découvrez les créations de nos stylistes . L’ensemble de leur
+            collection nous permet de vous proposer un éventail de 165
+            références.
+          </p>
+          <img src="" alt="" />
+        </div>
+      </section>
 
-        <!-- section contact -->
-        <section id="contact">
-            <h2></h2>
-            <p>Retrouvez nous au sein de notre boutiquedu mardi au samedi  de 9h à 18h (fermé de  12h à 14h)
-                    12 avenue Wilson, 90000 Belfort  
-                    Tel :03-84-22-86-11 
-                    mail: contact@lucastore.fr</p>
-            <img src="" alt="">
-        </section>
+      <!-- section contact -->
+      <section id="contact">
+        <h2></h2>
+        <p>
+          Retrouvez nous au sein de notre boutiquedu mardi au samedi de 9h à 18h
+          (fermé de 12h à 14h) 12 avenue Wilson, 90000 Belfort Tel
+          :03-84-22-86-11 mail: contact@lucastore.fr
+        </p>
+        <img src="img/exterieur.png" alt="devanture" />
+      </section>
 
-        <footer>
-            <p></p>
-        </footer>
+      <footer>
+        <p></p>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
