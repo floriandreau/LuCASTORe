@@ -17,7 +17,7 @@ h2
 {
 padding: top 20px;
 font-family: 'Signika', sans-serif;
-font-size: 30px;
+font-size: 2rem;
 }
 
 .titre1
@@ -33,7 +33,7 @@ padding: 1px 200px;
 p
 {
  font-family: 'Open Sans', sans-serif;
- font-size: 16px;  
+ font-size: 1rem;  
 }
 
 #boutique, #contact
@@ -73,10 +73,9 @@ height: 100px;
 {
 
 display: flex;
+justify-content: center;
 align-items: row;
-display: flex;
-align-items: row;
-margin-right: 160px;
+margin-right: 10%;
 padding: 20px 0;
 list-style: none;
 
@@ -86,7 +85,7 @@ list-style: none;
 {
 font-family:'Signika', sans-serif; 
 text-decoration: none;
-font-size: 16px;
+font-size: 1rem;
 color: black;
 padding:35px 10px;
 }
@@ -177,7 +176,7 @@ padding-bottom: 50px;
 }
 .background_map
 {
-background: url("../img/map.png")no-repeat; 
+background: url("../img/map.png")no-repeat center; 
 height: 500px;
 background-size: contain;
 }
@@ -221,12 +220,13 @@ display: none;
 {
 padding:  50px;
 display: flex;
-justify-content: flex-end;
+justify-content: space-between;
 }
 
 .logo_adresse
 { 
-margin-left: 145px;  
+margin-left: 30%;  
+padding-top: 10%;
 }
 
 .adresse
@@ -262,11 +262,20 @@ height: 40px;
 .navfoot
 {
 display: flex;
-justify-content:space-between;  
-margin-left: 150px;
+justify-content:center;  
 }
-.media2{
-padding:20px
+
+.navfoot .nav_ul
+{
+  width: 65%;
+  margin: 0;  
+  display:flex;
+  justify-content:space-around;
+}
+.media2 a
+{
+width: 30%;
+padding: 0;
     }
 
 /* bouton de navigation*/
