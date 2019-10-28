@@ -9,72 +9,80 @@
 /* balises generiques*/
 body,header
 {
- margin:0;
+ margin:0 ;
+ 
 }
 
 h2
 {
+padding: top 20px;
 font-family: 'Signika', sans-serif;
 font-size: 30px;
-padding : 50px 0 ;
+}
+
+.titre1
+{
+padding : 25px 0 ;
 }
 
 .marge_section
 {
-    padding: 0 200px;
+padding: 1px 200px;
 }
-
 
 p
 {
  font-family: 'Open Sans', sans-serif;
  font-size: 16px;  
 }
+
 #boutique, #contact
 {
 background-color:#d0dbcf ; 
 padding-bottom: 50px; 
-
 }
-#matiere, #collection, footer
+
+#matiere, #collection, footer 
 {
 background-color: #a68f77 ;
-padding-bottom: 50px;    
+padding-bottom: 50px;   
+padding-top: 10px;
 }
-/*navbar*/
 
+.wraps 
+{
+ display: flex; 
+ flex-wrap: nowrap; 
+ justify-content: space-between;
+}
 
+/*header &navbar*/
+header
 
 
 .navbar
 {
 background-color: #a68f77 ;
-color:black;
 display: flex;
 justify-content: flex-end;  
-
 width: 100%;
+height: 100px;
 }
 
 .nav_ul
 {
-background-color: #a68f77 ;
- color:black;
- display: flex;
-align-items: row;
 
-    
 display: flex;
 align-items: row;
-
-justify-content: flex-end;
+display: flex;
+align-items: row;
 margin-right: 160px;
 padding: 20px 0;
 list-style: none;
-justify-content: space-between;
+
 }
 
-a
+.media a, .media2 a
 {
 font-family:'Signika', sans-serif; 
 text-decoration: none;
@@ -83,27 +91,205 @@ color: black;
 padding:35px 10px;
 }
 
-a:hover
+.media a:hover
 {
 font-family:'Signika', sans-serif; 
 text-decoration: none;
 font-size: 16px;
 background-color:rgba(102, 136, 96, 0.6);
-padding:35px 10px;
+padding:45px 10px;
+height: 100%;
 }
-#burger
+
+#burger, .none
 {
 display: none;
 }
-.logo_blanc
+
+#logo_blanc
 {
 background: url("../img/logoblanc.png") no-repeat;
 position: absolute;
- top: -30px; 
- left:0px;
+left:0px;
 width: 200px;
-height: 100px;
+height: 100%;
+margin: 0;
+}
+/*vue du magasin*/
+.background_mag
+{
+margin-bottom: -10px;
+}
+.vue_globale
+{
+width: 100%;
+height: 650px;  
+}
 
+ 
+
+  
+
+
+/*section de presentation de la boutique*/
+
+.ethique
+{
+
+vertical-align:-30px;
+}
+
+.demarche, .collec
+{
+
+ max-width: 688px;
+ line-height: 3; 
+ font-size: 16px;
+ text-align: justify;
+
+}
+.signature
+{
+color:rgb(102, 136, 96);
+font-weight: bold;
+font-size: 18px;
+margin-left:350px ;
+} 
+
+/*section de presentation des matériaux*/
+.matiere1
+{
+display:flex;    
+margin-top: 25px;
+justify-content: space-between;
+font-size: 14px;
+text-align: justify;
+width:260px;
+
+}
+
+/*section de mappemonde*/
+#map
+{
+background-color:#96b18e;
+padding-bottom: 50px;
+
+}
+.background_map
+{
+background: url("../img/map.png")no-repeat; 
+height: 500px;
+background-size: contain;
+}
+
+/*section de slide de collection*/
+ #collection
+ {
+height: 400px;
+display: flex;
+flex-direction: row-reverse;
+justify-content: space-between;
+padding-bottom: 50px;
+ }
+
+.photo_collec
+{
+padding-top: 50px;
+width: 45%;
+height: 80%;
+}
+
+.slide{
+    width: 100%;
+    height: 100%;
+}
+
+.text_collec
+{
+padding-top: 15px;
+text-align: justify;
+
+}
+.hide
+{
+display: none;
+}
+
+
+/* section de contact et coordonnées*/
+#contact
+{
+padding:  50px;
+display: flex;
+justify-content: flex-end;
+}
+
+.logo_adresse
+{ 
+margin-left: 145px;  
+}
+
+.adresse
+{   
+text-align: center;
+margin: 50px 100px ;
+}
+.mail
+{
+text-decoration: none;
+color:#654723
+}
+.devanture
+{
+width: 460px;
+
+}
+.reseaux_sociaux
+{
+display: flex;
+justify-content: space-between;
+width: 200px;
+padding:0 10px;
+margin-left: 140px ;
+
+
+}
+.reseaux
+{
+height: 40px;
+}
+/*footer*/
+.navfoot
+{
+display: flex;
+justify-content:space-between;  
+margin-left: 150px;
+}
+.media2{
+padding:20px
+    }
+
+/* bouton de navigation*/
+#bouton
+{
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ background-color:#668860;
+ position: fixed;
+ right: 10px;
+ bottom: 10px;
+ display: none;
+}
+
+#bouton > span > a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url(../img/caret-arrow-up.png) no-repeat center;
+}
     
-}   
+     
+        
+
     }
