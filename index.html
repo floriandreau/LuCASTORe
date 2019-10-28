@@ -1,154 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LuCASTORe</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media-style.css" />
-  </head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-style.css">
+</head>
   <body onload="slidejs();">
     <!-- Pour nom de classe mettre media pour le fichier media-style -->
 
     <header>
-      
-      <nav class="navbar">
-          <h1  id="logo_blanc"></h1>
-        <ul class="nav_ul">
-          <li class="media"><a href="#boutique">NOTRE BOUTIQUE VEGANE</a></li>
-          <li class="media"><a href="#matiere">NOS MATIÈRES PREMIÈRES</a></li>
-          <li class="media"><a href="#map">NOS FOURNISSEURS</a></li>
-          <li class="media"><a href="#collection">NOS COLLECTIONS</a></li>
-          <li class="media"><a href="#contact">CONTACT</a></li>
-        </ul>
-        <!-- a mettre en display none -->
-        <input type="checkbox" id="burger" />
-        <label for="burger"></label>
-      </nav>
+        <nav>
+            <h1></h1>
+            <label class="burger" for="burger"></label>
+            <input type="checkbox" name="burger" id="burger">
+            <ul class="herder">
+                <li><a href="#boutique">Notre boutique vegan</a></li>
+                <li><a href="#Matière">Nos matières premières</a></li>
+                <li><a href="#map">Nos fournisseurs</a></li>
+                <li><a href="#collection">Nos collections</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            
 
- <div class= "background_mag">
-
-    <img  src="img/vue_magasin.jpg" class="vue_globale" alt="coton" /> 
- </div>
-
+        </nav>
+        <div class="imagemagasin"></div>
     </header>
      <div id="bouton" onclick="topFunction()">
        <span><a href="#"></a></span>
      </div>
     <main>
-      <!-- section démarche -->
-      <section id="boutique" class="marge_section">
-      
-        <h2 class="titre1" ><img src="img/logonoir.png" class="ethique" alt="logo" /> UNE DÉMARCHE ÉTHIQUE</h2>
-        <div class="wraps">
-          <p class="demarche">
-            “Nous avons pour priorité d’acheter des produits respectueux des
-            animaux. Nos considérations sont aussi orientées vers la santé et de
-            l’écologie. Notre choix de commercialiser des vêtements éthiques
-            découle également de notre désir de nous engager pour l’équité
-            sociale et une exploitation raisonnée des ressources naturelles.<br/>
-            Ainsi nous refusons d’utiliser toute matière synthétique ou
-            d’origine animale en faveur de productions éco-responsables
-            (commerce équitable, bio, local).”<br /><span class="signature"
-              >Lucas VdB, Fondateur de LuCASTORe</span>
-          </p>
-          <img src="img/lucasvegan.jpg" alt="lucas" />
-        </div>
-      </section>
+        <!-- section démarche -->
+        <section id="boutique">
+            <h2> <img src="image/logonoir.png" alt="logonoir"  class="logonoir"> <span class="demarche">Une démarche éthique</span></h2>
+            <p>“Nous avons pour priorité d’acheter des produits respectueux des animaux. 
+                Nos considérations sont aussi orientées vers la santé et de l’écologie. 
+                Notre choix de commercialiser des vêtements éthiques découle également de notre désir 
+                    de nous engager pour l’équité sociale et une exploitation raisonnée des ressources naturelles. 
+                    Ainsi nous refusons d’utiliser toute matière synthétique ou d’origine animale 
+                    en faveur de productions éco-responsables (commerce équitable, bio, local).”<br><span class="lucas">Lucas VdB, Fondateur de LuCASTORe</span></p> 
+            <img src="image/lucasvegan.jpg "  alt="gerant"  class="lucasimg">
+        </section>
 
-      <!-- section matière (slide pour mobile ?)-->
-      <section id="matiere" class="marge_section">
-       
-        <h2 class="titre1">NOS MATIÈRES PREMIÈRES</h2>
-        <article class ="wraps">
-         
-          <arcticle >
-            <img src="img/fleur_coton.jpg" alt="coton" />
-            <p class="matiere1">
-              Le coton utilisé  pour nos étoffes 
-              respecte l'environnement; il est produit dans des conditions de
-              travail équitables.<br/>Certifié GOTS par
-              Ecocert, il est aussi hypoallergénique
-            </p>
-          </arcticle>
-          <arcticle>
-            <img src="img/fibre_chanvre.jpg" alt="chanvre" />
-            <p class="matiere1">
-              La toile que nous utilisons est tissée à partir de chanvre issu
-              d’une agriculture écologique, transformée sans agents chimiques.
-              Très résistante, elle gardera un bel aspect très longtemps.
-            </p>
-          </arcticle>
-          <arcticle>
-            <img src="img/lin_teille.jpg" alt="lin"/>
-            <p class="matiere1">
-             Le lin biologique de nos tissus est cultivé en Normandie et tissé en Belgique.<br/>
-              Une matière ultra douce et sélective, certifiée GOTS par Ecocert.
-            </p>
-          </arcticle>
-      </article>
-      </section>
+        <!-- section matière (slide pour mobile ?)-->
+        <section id="Matière">
+            <h2>Nos matières premières</h2>
+            <article> 
+                <img src="image/lin_teille.jpg" alt="lin_teille"  class="lin_teille"> 
+                <p class="lin">Le Lin biologique de nos tissus est cultivé en Normandie et tissé en Belgique.
+                    Une matière ultra douce et sélective, certifiée GOTS par Ecocert.
+                </p> 
+            
+            </article>
+        </section>
 
-      <!-- section map -->
-      
-      <section id="map" class="marge_section">
-       <h2 class="titre1">NOS FOURNISSEURS</h2>
-        <div class="background_map"></div>
-      </section>
+        <!-- section map -->
+        <section id="map">
+            <h2 class="fournisseur hide">Nos Fournisseurs</h2>
+            <div class="mappemonde"></div>
+        </section>
 
-      <!-- section collections avec slide-->
-
-      <section id="collection" class="marge_section" class="wraps">
-         <div class="text_collec">
-             <h2   >NOS COLLECTIONS</h2>
-             <p class= "collec" > Découvrez les créations de nos stylistes locaux .<br/> L’ensemble de leur
-            collection nous permet<br/> de vous proposer un éventail de 165 références.</p>
-          </div>
+        <!-- section collections avec slide-->
+        <section id="collection">
+            
+            <div class="collection">
+                    <h2 class="titrecollection"> Nos collections</h2>
+                
+                <img src="image/collection.png" alt="collection" height="200px" width="200px">
+                <p>Découvrez les créations de nos stylistes . 
+                L’ensemble de leur collection nous permet de vous proposer un éventail de 165 références.</p>
+            </div>
           <!-- l'image est a titre indicative et sera remplacée par un slide-->
           <div id="slide" class="photo_collec">
            <img src="img/slide0.jpg" class="slide" alt="modele de collection" />
            <img src="img/slide1.jpg" class=" hide slide" alt="modele colec"/>
            <img src="img/slide2.jpg" class=" hide slide" alt="modele colec"/>
            </div>
-       </section>
+        </section>
 
-      <!-- section contact -->
-      <section id="contact">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.6899256538018!2d6.852759115631381!3d47.63215837918641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47923c99234a9efd%3A0x635fe72fbbb27b06!2s12%20Avenue%20Wilson%2C%2090000%20Belfort!5e0!3m2!1sfr!2sfr!4v1572251907634!5m2!1sfr!2sfr" 
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        
-        <div class="coordonnes_text">
-            <h2 class="none"> contact</h2>
-        <img src="img/logonoir.png" class="logo_adresse"  alt="logo" />
-        
-        <p class="adresse">
-          Retrouvez nous au sein de notre boutique<br/> du mardi au samedi<br/> de 9h à 18h
-          (fermé de 12h à 14h) <br/>12 avenue Wilson, 90000 Belfort<br/> Tel
-          : 03-84-22-86-11<br/> mail : <a href="mailto:votrenom@bidule.com" class="mail">contact@lucastore.fr</a>
-        </p>
-        <div class="reseaux_sociaux">
-        <a href="lien"><img src="img/facebook.svg" class="reseaux"></a>
-        <a href="lien"><img src="img/twitter.svg" class="reseaux"></a>
-        <a href="lien"><img src="img/instagram.svg" class="reseaux"></a>
-        
-      </div>
-      </div>
+        <!-- section contact -->
+        <section id="contact">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.6899256537886!2d6.852759115944526!3d47.63215837918654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47923c99234a9efd%3A0x635fe72fbbb27b06!2s12%20Avenue%20Wilson%2C%2090000%20Belfort!5e0!3m2!1sfr!2sfr!4v1572256047489!5m2!1sfr!2sfr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div id="contenu_contact">
+
+                <h2  class="map"><img src="image/logonoir.png" alt="logonoir"></h2>
+                <img src="image/imagexterieur.png" alt="devanture" >
+                <div class="button">
+                <p class="contact">Retrouvez nous au sein de notre boutique du mardi au samedi  de 9h à 18h (fermé de  12h à 14h)
+                        12 avenue Wilson, 90000 Belfort  
+                        Tel :03-84-22-86-11 
+                        mail: contact@lucastore.fr </p>
+                <button><img src="image/twitter.svg" alt="twitter" ></button>
+                                    <button><img src="image/facebook.svg" alt="facebook"></button>
+                                    <button><img src="image/instagram.svg" alt="instagram"></button>
+               
+            </div>
+            </div>
         <img src="img/exterieur.png" class="devanture" alt="devanture" />
        
-      </section>
+         </section>
 
-      <footer class="marge_section" >
-          <nav class="navfoot">
-            <ul class="nav_ul">
-              <li class="media2"><a href=" lien">CONDITIONS GENERALES DE VENTE</a></li>
-              <li class="media2"><a href="lien"> POLITIQUE DE CONFIDENTIALITÉ</a></li>
-              <li class="media2"><a href="lien">MENTIONS LÉGALES</a></li>
-              
-            </ul>
-        <p></p>
-      </footer>
+        <footer>
+          <ul class="footer">
+          <li><a href="#CGU">CGU</a></li>
+          <li><a href="#politique de confidentialité">politique de confidentialité</a></li>
+          <li><a href="#mentions légales">mentions légales</a></li>
+        </ul>
+            
+        </footer>
     </main>
     <script src="js/slide.js"></script>
-  </body>
-</html>
+</body>
+</html> 
