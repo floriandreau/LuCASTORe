@@ -1,7 +1,6 @@
 
 
 
-@media screen and (min-width: 1280px){
 
  
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Signika&display=swap');
@@ -10,30 +9,49 @@
 body,header
 {
  margin:0 ;
- 
+ height: auto;
 }
-
-h2
+h1{
+    margin: 0;
+}
+label{
+    display: none;
+}
+h2 > .demarche
 {
 padding: top 20px;
 font-family: 'Signika', sans-serif;
 font-size: 2rem;
 }
 
+h2 > .logonoir{
+    width: 200px;
+    height: 100px;
+}
+
 .titre1
 {
 padding : 25px 0 ;
+display: block;
+text-transform: uppercase;
+font-size: 2rem;
 }
 
 .marge_section
 {
 padding: 1px 200px;
 }
-
-p
+a{
+    text-transform: uppercase;
+}
+ul > .media{
+    display: block;
+}
+p 
 {
  font-family: 'Open Sans', sans-serif;
  font-size: 1rem;  
+ overflow: hidden !important;
 }
 
 #boutique, #contact
@@ -55,10 +73,22 @@ padding-top: 10px;
  flex-wrap: nowrap; 
  justify-content: space-between;
 }
+#Matière{
+     background-color: #a68f77;
+}
+.wrap{
+    width: 75%;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 10%;
+}
+
+#Matière > .titre1{
+    font-size: 2rem;
+    margin: 3% 15%;
+}
 
 /*header &navbar*/
-header
-
 
 .navbar
 {
@@ -69,7 +99,7 @@ width: 100%;
 height: 100px;
 }
 
-.nav_ul
+.nav_ul, .herder
 {
 
 display: flex;
@@ -78,7 +108,11 @@ align-items: row;
 margin-right: 10%;
 padding: 20px 0;
 list-style: none;
-
+background: none;
+top: 0;
+left: 0;
+position: relative;
+margin: 1rem 10% 1rem 0;
 }
 
 .media a, .media2 a
@@ -119,7 +153,7 @@ margin: 0;
 {
 margin-bottom: -10px;
 }
-.vue_globale
+.imagemagasin
 {
 width: 100%;
 height: 650px;  
@@ -138,14 +172,18 @@ height: 650px;
 vertical-align:-30px;
 }
 
-.demarche, .collec
-{
+#boutique > .p_media{
+    margin-top: 15% !important;
+}
 
+#boutique > .p_media, .collec
+{
  max-width: 688px;
  line-height: 3; 
  font-size: 16px;
  text-align: justify;
-
+ height: auto;
+ margin-top: 10%;
 }
 .signature
 {
@@ -155,11 +193,17 @@ font-size: 18px;
 margin-left:350px ;
 } 
 
+.lucasimg{
+    height: 80%;
+    width: auto;
+    margin: 10% 0 5% 5%;
+}
+
 /*section de presentation des matériaux*/
 .matiere1
 {
 display:flex;    
-margin-top: 25px;
+margin:5% 0;
 justify-content: space-between;
 font-size: 14px;
 text-align: justify;
@@ -171,10 +215,11 @@ width:260px;
 #map
 {
 background-color:#96b18e;
-padding-bottom: 50px;
-
+padding: 0;
+margin: 0;
 }
-.background_map
+
+.background_map, .mappemonde
 {
 background: url("../img/map.png")no-repeat center; 
 height: 500px;
@@ -189,20 +234,26 @@ display: flex;
 flex-direction: row-reverse;
 justify-content: space-between;
 padding-bottom: 50px;
+width: auto;
  }
 
 .photo_collec
 {
 padding-top: 50px;
-width: 45%;
+width: 30%;
 height: 80%;
 }
 
 .slide{
-    width: 100%;
+    width: auto;
     height: 100%;
 }
-
+.titrecollection{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1% 10% 0 0;
+}
 .text_collec
 {
 padding-top: 15px;
@@ -213,12 +264,15 @@ text-align: justify;
 {
 display: none;
 }
-
+.hide_media{
+    display: none;
+}
 
 /* section de contact et coordonnées*/
 #contact
 {
-padding:  50px;
+width: 100vw;
+padding:  0;
 display: flex;
 justify-content: space-between;
 }
@@ -229,10 +283,13 @@ margin-left: 30%;
 padding-top: 10%;
 }
 
-.adresse
+.adresse, .button
 {   
 text-align: center;
-margin: 50px 100px ;
+padding: 0 25% ;
+}
+.contact{
+    font-size: 1rem;
 }
 .mail
 {
@@ -248,15 +305,21 @@ width: 460px;
 {
 display: flex;
 justify-content: space-between;
-width: 200px;
-padding:0 10px;
-margin-left: 140px ;
+width: 150px;
+padding:0;
+margin: 5% 0;
+}
 
-
+#contenu_contact > .button{
+    margin-top: 15%;
 }
 .reseaux
 {
 height: 40px;
+}
+.collection > .collec{
+    font-size: 1rem;
+    margin: 0 10%;
 }
 /*footer*/
 .navfoot
@@ -278,26 +341,38 @@ width: 30%;
 padding: 0;
     }
 
-/* bouton de navigation*/
-#bouton
-{
- width: 50px;
- height: 50px;
- border-radius: 100%;
- background-color:#668860;
- position: fixed;
- right: 10px;
- bottom: 10px;
- display: none;
+.media2{
+    margin: 0 5%;
 }
 
-#bouton > span > a {
-    width: 50px;
-    height: 50px;
-    display: block;
-    background: url(../img/caret-arrow-up.png) no-repeat center;
+footer > .nav_ul{
+    width: 100%;
+    margin: 1% 1%;
 }
-    
+
+
+.article_img{
+    width: 30%;
+    display: block !important;
+}
+#contact{
+    width: 100%;
+}
+
+.devanture{
+    display: block;
+    margin: 0;
+}
+
+.map{
+    position: absolute;
+}
+
+.map > img{
+    width: 30% !important;
+    margin-right: 5% !important;
+    margin-bottom: 60%!important;
+}    
      
         
 
